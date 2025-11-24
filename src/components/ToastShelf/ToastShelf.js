@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ToastContext } from "../ToastProvider";
-import useEscapeKey from "./useEscapeKey";
+import useEscapeKey from "../hooks/useEscapeKey";
 
 import Toast from "../Toast";
 import styles from "./ToastShelf.module.css";
