@@ -4,6 +4,7 @@ import Button from "../Button";
 import Toast from "../Toast";
 
 import styles from "./ToastPlayground.module.css";
+import ToastShelf from "../ToastShelf/ToastShelf";
 
 const VARIANT_OPTIONS = ["notice", "warning", "success", "error"];
 
@@ -29,17 +30,7 @@ function ToastPlayground() {
         <h1>Toast Playground</h1>
       </header>
 
-      {toasts.map((toast) => (
-        <Toast
-          key={toast.id}
-          variant={toast.variant}
-          toastId={toast.id}
-          toastList={toasts}
-          setToastList={setToasts}
-        >
-          {toast.message}
-        </Toast>
-      ))}
+      <ToastShelf toastList={toasts} setToastList={setToasts} />
 
       <div className={styles.controlsWrapper}>
         <div className={styles.row}>
