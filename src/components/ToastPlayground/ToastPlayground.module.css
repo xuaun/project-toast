@@ -57,7 +57,7 @@
   min-height: 3rem;
 }
 
-.row:not(:last-of-type) {
+.row:not(:last-child) {
   padding-bottom: 16px;
   border-bottom: 1px dotted hsl(250deg 80% 80% / 0.5);
   margin-bottom: 16px;
@@ -105,4 +105,22 @@
   display: block;
   width: 100%;
   height: 4rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  min-inline-size: 0;
+  margin-inline: 0;
+}
+
+form legend {
+  float: inline-start;
+}
+
+legend {
+  padding-inline: 0;
 }
